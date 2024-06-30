@@ -1,0 +1,101 @@
+html,body
+{
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgba(236, 240, 241,1.0);
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+#Heading
+{
+    font-size: 2em;
+    text-align: center;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+
+.boxes
+{
+    width: 30%;
+    padding: 1em;
+    margin: 1.5%;
+    background-color: rgba(52, 73, 94,1.0);
+    float: left;
+    border-bottom: 10px solid transparent;
+    transition: 0.4s;
+}
+
+.boxes:hover
+{
+    border-color: rgba(26, 188, 156,1.0);
+    transform: scale(1.05);
+}
+.boxes>h4
+{
+    margin: 0.2em;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.boxes>p
+{
+    color: #fff;
+    font-weight: 100;
+}
+.boxes h4:nth-child(1)
+{
+    color: rgba(26, 188, 156,1.0);
+}
+.boxes h4:nth-child(2)
+{
+    color: rgba(46, 204, 113,1.0);
+}
+.boxes h4:nth-child(3)
+{
+    color: rgba(22, 160, 133,1.0);
+}
+
+@media (min-width: 992px)
+{
+    .boxes
+    {
+        width: 30%;
+        margin: 1.5%;
+    }
+}
+@media (min-width:768px) and (max-width: 991px)
+{
+    .boxes:nth-child(1), .boxes:nth-child(2)
+    {
+        width: 45%;
+        margin:2.5%;
+    }
+    .boxes:nth-child(3)
+    {
+        width: 95%;
+        margin: 2.5%;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .boxes{
+        width: 95%;
+        margin: 2.5%;
+    }
+}
